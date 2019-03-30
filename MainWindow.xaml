@@ -1,0 +1,32 @@
+﻿<Window x:Class="TestWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="220" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40"  />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>    
+            <ColumnDefinition></ColumnDefinition>    
+            <ColumnDefinition></ColumnDefinition>   
+   
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row = "0" Grid.Column = "0" Content="Monto 1" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="10"/>
+        <TextBox Name = "TxtMontoUno" Grid.Row = "0" Grid.Column="1" />
+        <Label Grid.Row = "1" Grid.Column = "0" Content="Monto 2" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="10"/>
+        <TextBox Name = "TxtMontoDos" Grid.Row = "1" Grid.Column="1" />
+        <Label Grid.Row = "2" Grid.Column = "0" Content="Monto 3" HorizontalAlignment="Center" VerticalAlignment="Center"
+               FontSize="10"/>
+        <TextBox Name = "TxtResultado" Grid.Row = "2" Grid.Column="1" />
+        <Button Content="Resultado" Grid.Row="3" Grid.ColumnSpan="2" FontSize="20" Click="ButtonCalcular_Click" />
+    </Grid>
+</Window>
